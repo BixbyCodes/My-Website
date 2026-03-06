@@ -33,11 +33,11 @@ const projects = [
   },
   {
     num: '05',
-    name: 'Home Square Studios',
+    name: 'HSS',
     desc: 'Interior design firm client website achieving 95+ Lighthouse mobile score across 5+ screen sizes, with CSS animations and 3 revision cycles delivered on schedule.',
     stats: ['95+ Lighthouse score', '5+ screen sizes', 'Client project'],
     tech: ['HTML5', 'CSS3', 'JavaScript'],
-    link: 'https://www.homesquarestudios.com',
+    
   },
 ]
 
