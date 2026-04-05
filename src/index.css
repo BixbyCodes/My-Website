@@ -1,17 +1,17 @@
 :root {
-  --bg: #080810;
-  --bg2: #0c0c18;
-  --surface: #11111f;
-  --surface2: #161628;
-  --border: #1c1c30;
-  --border2: #252540;
+  --bg: #0e0e1c;
+  --bg2: #12121f;
+  --surface: #181828;
+  --surface2: #1e1e34;
+  --border: #272740;
+  --border2: #33335a;
   --gold: #e8a020;
   --gold2: #f5c060;
-  --gold-dim: rgba(232,160,32,0.12);
+  --gold-dim: rgba(232,160,32,0.14);
   --ink: #eeeef8;
-  --ink2: #9898b8;
-  --ink3: #55557a;
-  --ink4: #2a2a45;
+  --ink2: #a8a8c8;
+  --ink3: #6a6a90;
+  --ink4: #35355a;
   --red: #e05555;
   --green: #50c878;
   --blue: #6688cc;
@@ -40,7 +40,7 @@ body::after {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
   pointer-events: none;
   z-index: 9999;
-  opacity: 0.35;
+  opacity: 0.25;
 }
 
 ::-webkit-scrollbar { width: 3px; }

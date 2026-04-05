@@ -1,5 +1,5 @@
 const interests = [
-  { icon: '✍️', title: 'Writing & Poetry', desc: 'I write about anything — whatever comes to mind. Raw, honest, unfiltered thoughts turned into verse.' },
+  
   { icon: '🏎️', title: 'Formula 1', desc: 'Fascinated by how drivers make the right decision at 300km/h. That\'s a kind of intelligence I deeply admire.' },
   { icon: '🌌', title: 'The Universe', desc: 'Stars, astrology, the cosmos — I love everything about this universe and how small yet connected we all are.' },
   { icon: '🌙', title: 'Dreams', desc: 'Dreams have always fascinated me. The way the sleeping mind creates entire worlds — it\'s endlessly beautiful.' },
