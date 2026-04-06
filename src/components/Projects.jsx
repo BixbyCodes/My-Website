@@ -58,22 +58,22 @@ export default function Projects() {
               onMouseEnter={e => { e.currentTarget.style.transform = 'translateX(5px)'; e.currentTarget.style.borderColor = 'var(--border2)' }}
               onMouseLeave={e => { e.currentTarget.style.transform = 'translateX(0)'; e.currentTarget.style.borderColor = 'var(--border)' }}
             >
-              {/* Gold left bar on hover */}
+              {/* Left accent bar */}
               <div style={{
                 position: 'absolute', left: 0, top: 0, bottom: 0, width: '3px',
-                background: p.featured ? 'var(--gold)' : 'var(--border2)',
+                background: p.featured ? 'linear-gradient(180deg, var(--accent), var(--cyan))' : 'var(--border2)',
                 borderRadius: '0 2px 2px 0',
               }} />
 
               <div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.5rem' }}>
                   <span style={{ fontFamily: 'JetBrains Mono', fontSize: '0.62rem', color: 'var(--ink4)', letterSpacing: '0.1em' }}>{p.num}{p.featured ? ' / FEATURED' : ''}</span>
-                  {p.featured && <span style={{ fontFamily: 'JetBrains Mono', fontSize: '0.6rem', color: 'var(--gold)', border: '1px solid rgba(232,160,32,0.3)', padding: '0.1rem 0.5rem', borderRadius: '4px' }}>★ LIVE</span>}
+                  {p.featured && <span style={{ fontFamily: 'JetBrains Mono', fontSize: '0.6rem', color: 'var(--accent)', border: '1px solid rgba(167,139,250,0.35)', padding: '0.1rem 0.5rem', borderRadius: '4px' }}>★ LIVE</span>}
                 </div>
                 <h3 style={{ fontFamily: 'Cormorant Garamond', fontSize: '1.6rem', fontWeight: 700, color: 'var(--ink)', marginBottom: '0.65rem' }}>{p.name}</h3>
                 <p style={{ color: 'var(--ink2)', fontSize: '0.875rem', lineHeight: 1.75, marginBottom: '1rem', maxWidth: '580px' }}>{p.desc}</p>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', marginBottom: '0.75rem' }}>
-                  {p.stats.map(s => <span key={s} style={{ fontFamily: 'JetBrains Mono', fontSize: '0.68rem', padding: '0.22rem 0.7rem', borderRadius: '6px', background: 'var(--gold-dim)', border: '1px solid rgba(232,160,32,0.2)', color: 'var(--gold)' }}>{s}</span>)}
+                  {p.stats.map(s => <span key={s} style={{ fontFamily: 'JetBrains Mono', fontSize: '0.68rem', padding: '0.22rem 0.7rem', borderRadius: '6px', background: 'var(--accent-dim)', border: '1px solid rgba(167,139,250,0.2)', color: 'var(--accent)' }}>{s}</span>)}
                 </div>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
                   {p.tech.map(t => <span key={t} style={{ fontFamily: 'JetBrains Mono', fontSize: '0.68rem', padding: '0.22rem 0.6rem', borderRadius: '6px', background: 'var(--surface2)', border: '1px solid var(--border2)', color: 'var(--ink3)' }}>{t}</span>)}
@@ -81,13 +81,13 @@ export default function Projects() {
               </div>
 
               <a href={p.link} target="_blank" rel="noopener" style={{
-                fontFamily: 'JetBrains Mono', fontSize: '0.72rem', color: 'var(--gold)',
+                fontFamily: 'JetBrains Mono', fontSize: '0.72rem', color: 'var(--accent)',
                 textDecoration: 'none', padding: '0.5rem 1.1rem',
-                border: '1px solid rgba(232,160,32,0.3)', borderRadius: '8px',
+                border: '1px solid rgba(167,139,250,0.35)', borderRadius: '8px',
                 whiteSpace: 'nowrap', alignSelf: 'start', marginTop: '1.5rem',
                 transition: 'all 0.2s',
               }}
-              onMouseEnter={e => { e.currentTarget.style.background = 'var(--gold-dim)'; e.currentTarget.style.transform = 'translateY(-2px)' }}
+              onMouseEnter={e => { e.currentTarget.style.background = 'var(--accent-dim)'; e.currentTarget.style.transform = 'translateY(-2px)' }}
               onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.transform = 'translateY(0)' }}
               >Live ↗</a>
             </div>

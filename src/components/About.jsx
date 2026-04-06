@@ -24,7 +24,7 @@ export default function About() {
             <div className="reveal delay-1" style={{ display: 'flex', flexDirection: 'column', gap: '1.1rem' }}>
               {[
                 <>I'm a <strong style={{ color: 'var(--ink)', fontWeight: 500 }}>Full Stack Developer</strong> with 2+ years of experience building and shipping production-grade web apps. B.Tech CS student at ABES Engineering College, expected 2027.</>,
-                <>Published <strong style={{ color: 'var(--ink)', fontWeight: 500 }}>30+ technical articles on Medium</strong> reaching 5000+ developers globally. Completed the <strong style={{ color: 'var(--ink)', fontWeight: 500 }}>100 Days Learn in Public</strong> challenge on <a href="https://x.com/bixbycodes" target="_blank" style={{ color: 'var(--gold)', textDecoration: 'none' }}>X (@bixbycodes)</a>.</>,
+                <>Published <strong style={{ color: 'var(--ink)', fontWeight: 500 }}>30+ technical articles on Medium</strong> reaching 5000+ developers globally. Completed the <strong style={{ color: 'var(--ink)', fontWeight: 500 }}>100 Days Learn in Public</strong> challenge on <a href="https://x.com/bixbycodes" target="_blank" style={{ color: 'var(--accent)', textDecoration: 'none' }}>X (@bixbycodes)</a>.</>,
                 <>But honestly? I'm just someone endlessly curious about the world. I write code the same way I write poems — with intention, with feeling, and with a lot of late nights.</>,
                 <>I'm fascinated by <strong style={{ color: 'var(--ink)', fontWeight: 500 }}>how people think</strong>. By dreams. By the fact that we're tiny specks in an infinite universe — and somehow, here we are, building things and telling stories.</>,
               ].map((text, i) => (
@@ -38,7 +38,7 @@ export default function About() {
             {interests.map((item, i) => (
               <div key={i} className={`card reveal delay-${i % 4}`}
                 style={{ padding: '1.4rem', cursor: 'default' }}
-                onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(232,160,32,0.3)'}
+                onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(167,139,250,0.35)'}
                 onMouseLeave={e => e.currentTarget.style.borderColor = 'var(--border)'}
               >
                 <div style={{ fontSize: '1.6rem', marginBottom: '0.6rem' }}>{item.icon}</div>

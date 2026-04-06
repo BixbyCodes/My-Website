@@ -21,10 +21,10 @@ export default function Skills() {
           {groups.map((g, i) => (
             <div key={g.label} className={`card reveal delay-${i % 4}`}
               style={{ padding: '1.75rem' }}
-              onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(232,160,32,0.25)'}
+              onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(167,139,250,0.3)'}
               onMouseLeave={e => e.currentTarget.style.borderColor = 'var(--border)'}
             >
-              <p style={{ fontFamily: 'JetBrains Mono', fontSize: '0.65rem', letterSpacing: '0.15em', color: 'var(--gold)', textTransform: 'uppercase', marginBottom: '1.1rem' }}>{g.label}</p>
+              <p style={{ fontFamily: 'JetBrains Mono', fontSize: '0.65rem', letterSpacing: '0.15em', color: 'var(--accent)', textTransform: 'uppercase', marginBottom: '1.1rem' }}>{g.label}</p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
                 {g.tags.map(t => (
                   <span key={t} style={{

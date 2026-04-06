@@ -9,6 +9,7 @@ import F1 from './components/F1'
 import Path from './components/Path'
 
 import { Certifications, Contact } from './components/CertsContact'
+import CursorGlow from './components/CursorGlow'
 import { useReveal } from './useReveal'
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
 
   return (
     <div>
+      <CursorGlow />
       <Navbar />
       <Hero />
       <About />
@@ -36,7 +38,7 @@ export default function App() {
         color: 'var(--ink4)',
         letterSpacing: '0.05em',
       }}>
-        <span style={{ color: 'var(--gold)' }}>Utsav Tripathi</span> · Developer by profession, poet by passion, stargazer by nature ✦
+        <span style={{ color: 'var(--accent)' }}>Utsav Tripathi</span> · Developer by profession, poet by passion, stargazer by nature ✦
       </footer>
     </div>
   )

@@ -14,7 +14,7 @@ const certs = [
     meta: ['60 hrs', 'April 2026'],
     link: 'https://www.credly.com/go/xAi5ttJP',
     linkLabel: 'View Badge',
-    accent: '#FF9900',
+    accent: '#a78bfa',
     image: certAws,
   },
   {
@@ -26,7 +26,7 @@ const certs = [
     meta: ['Data Structures & Algorithms'],
     link: null,
     linkLabel: null,
-    accent: '#F5A623',
+    accent: '#67e8f9',
     image: certApna,
   },
   {
@@ -38,7 +38,7 @@ const certs = [
     meta: ['61.5 hrs', 'Sept 2025'],
     link: 'https://ude.my/UC-23571fbe-097c-44ca-841a-e7bfcb0e9fbd',
     linkLabel: 'View Certificate',
-    accent: '#A435F0',
+    accent: '#f472b6',
     image: certUdemy,
   },
 ]
@@ -89,7 +89,7 @@ export function Certifications() {
               key={i}
               className={`card reveal delay-${i % 4}`}
               style={{ padding: '1.5rem' }}
-              onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(232,160,32,0.25)'}
+              onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(167,139,250,0.3)'}
               onMouseLeave={e => e.currentTarget.style.borderColor = 'var(--border)'}
             >
               <div style={{ fontSize: '1.4rem', marginBottom: '0.65rem' }}>{c.icon}</div>
@@ -98,9 +98,9 @@ export function Certifications() {
               <span style={{
                 fontFamily: 'JetBrains Mono', fontSize: '0.62rem',
                 padding: '0.2rem 0.6rem', borderRadius: '6px',
-                background: c.status === 'done' ? 'rgba(80,200,120,0.08)' : 'rgba(232,160,32,0.08)',
-                border: `1px solid ${c.status === 'done' ? 'rgba(80,200,120,0.2)' : 'rgba(232,160,32,0.2)'}`,
-                color: c.status === 'done' ? 'var(--green)' : 'var(--gold)',
+                background: c.status === 'done' ? 'rgba(52,211,153,0.08)' : 'rgba(167,139,250,0.08)',
+                border: `1px solid ${c.status === 'done' ? 'rgba(52,211,153,0.2)' : 'rgba(167,139,250,0.2)'}`,
+                color: c.status === 'done' ? 'var(--green)' : 'var(--accent)',
               }}>{c.label}</span>
             </div>
           ))}
@@ -121,13 +121,13 @@ function CertCard({ cert: c, index: i }) {
         style={{
           position: 'relative',
           background: 'var(--surface)',
-          border: '1px solid rgba(184,150,62,0.25)',
+          border: '1px solid rgba(167,139,250,0.2)',
           borderRadius: '2px',
           overflow: 'hidden',
           transition: 'border-color 0.3s',
         }}
-        onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(184,150,62,0.65)'}
-        onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(184,150,62,0.25)'}
+        onMouseEnter={e => e.currentTarget.style.borderColor = 'rgba(167,139,250,0.5)'}
+        onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(167,139,250,0.2)'}
       >
         {/* Top accent line */}
         <div style={{
@@ -176,7 +176,7 @@ function CertCard({ cert: c, index: i }) {
           <span style={{
             position: 'absolute', top: '2.8rem', right: '1.2rem',
             fontSize: '3rem', fontWeight: 300,
-            color: 'rgba(184,150,62,0.1)',
+            color: 'rgba(167,139,250,0.08)',
             lineHeight: 1, fontStyle: 'italic',
             fontFamily: 'Cormorant Garamond, Georgia, serif',
             userSelect: 'none', pointerEvents: 'none',
@@ -189,8 +189,8 @@ function CertCard({ cert: c, index: i }) {
             display: 'inline-block',
             fontSize: '0.6rem', letterSpacing: '0.15em', textTransform: 'uppercase',
             padding: '0.2rem 0.55rem',
-            border: '1px solid rgba(184,150,62,0.3)',
-            color: 'rgba(184,150,62,0.7)',
+            border: '1px solid rgba(167,139,250,0.25)',
+            color: 'rgba(167,139,250,0.7)',
             fontFamily: 'JetBrains Mono, monospace',
             marginBottom: '1rem',
           }}>
@@ -225,7 +225,7 @@ function CertCard({ cert: c, index: i }) {
           </p>
 
           {/* Divider */}
-          <div style={{ height: '1px', background: 'rgba(184,150,62,0.18)', marginBottom: '0.9rem' }} />
+          <div style={{ height: '1px', background: 'rgba(167,139,250,0.15)', marginBottom: '0.9rem' }} />
 
           {/* Meta */}
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.8rem', marginBottom: c.link ? '1rem' : 0 }}>
@@ -234,7 +234,7 @@ function CertCard({ cert: c, index: i }) {
                 fontSize: '0.68rem', color: 'var(--ink3)', letterSpacing: '0.06em',
                 fontFamily: 'JetBrains Mono, monospace',
               }}>
-                {j > 0 && <span style={{ marginRight: '0.4rem', color: 'var(--gold)' }}>·</span>}
+                {j > 0 && <span style={{ marginRight: '0.4rem', color: 'var(--accent)' }}>·</span>}
                 {m}
               </span>
             ))}
@@ -249,18 +249,18 @@ function CertCard({ cert: c, index: i }) {
               style={{
                 display: 'inline-flex', alignItems: 'center', gap: '0.35rem',
                 fontSize: '0.68rem', letterSpacing: '0.14em', textTransform: 'uppercase',
-                color: 'var(--gold)', textDecoration: 'none',
-                borderBottom: '1px solid rgba(184,150,62,0.35)', paddingBottom: '1px',
+                color: 'var(--accent)', textDecoration: 'none',
+                borderBottom: '1px solid rgba(167,139,250,0.35)', paddingBottom: '1px',
                 fontFamily: 'JetBrains Mono, monospace',
                 transition: 'color 0.2s, border-color 0.2s',
               }}
               onMouseEnter={e => {
-                e.currentTarget.style.color = '#f0c96a'
-                e.currentTarget.style.borderBottomColor = 'rgba(240,201,106,0.6)'
+                e.currentTarget.style.color = 'var(--accent2)'
+                e.currentTarget.style.borderBottomColor = 'rgba(196,181,253,0.6)'
               }}
               onMouseLeave={e => {
-                e.currentTarget.style.color = 'var(--gold)'
-                e.currentTarget.style.borderBottomColor = 'rgba(184,150,62,0.35)'
+                e.currentTarget.style.color = 'var(--accent)'
+                e.currentTarget.style.borderBottomColor = 'rgba(167,139,250,0.35)'
               }}
             >
               {c.linkLabel}
@@ -289,7 +289,7 @@ function CertCard({ cert: c, index: i }) {
             style={{
               maxWidth: '90vw', maxHeight: '85vh',
               objectFit: 'contain', borderRadius: '2px',
-              border: '1px solid rgba(184,150,62,0.3)',
+              border: '1px solid rgba(167,139,250,0.3)',
             }}
           />
           <button
@@ -311,7 +311,7 @@ function CertCard({ cert: c, index: i }) {
 }
 
 
-// ── Contact section (unchanged) ─────────────────────────────────────────────
+// ── Contact section ─────────────────────────────────────────────
 
 const socials = [
   { icon: '✉', label: 'tripathiutsav87@gmail.com', href: 'mailto:tripathiutsav87@gmail.com' },
@@ -342,7 +342,7 @@ export function Contact() {
                 fontFamily: 'JetBrains Mono', fontSize: '0.75rem',
                 transition: 'all 0.2s',
               }}
-                onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--gold)'; e.currentTarget.style.color = 'var(--gold)'; e.currentTarget.style.transform = 'translateY(-2px)' }}
+                onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--accent)'; e.currentTarget.style.color = 'var(--accent)'; e.currentTarget.style.transform = 'translateY(-2px)' }}
                 onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border2)'; e.currentTarget.style.color = 'var(--ink2)'; e.currentTarget.style.transform = 'translateY(0)' }}
               >
                 <span>{s.icon}</span> {s.label}

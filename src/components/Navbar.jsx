@@ -26,7 +26,7 @@ export default function Navbar() {
       height: '60px',
       display: 'flex', alignItems: 'center', justifyContent: 'space-between',
       padding: '0 2.5rem',
-      background: scrolled ? 'rgba(8,8,16,0.88)' : 'transparent',
+      background: scrolled ? 'rgba(10,10,20,0.88)' : 'transparent',
       backdropFilter: scrolled ? 'blur(20px)' : 'none',
       borderBottom: scrolled ? '1px solid var(--border)' : '1px solid transparent',
       transition: 'all 0.4s ease',
@@ -36,7 +36,10 @@ export default function Navbar() {
         fontSize: '1.4rem',
         fontStyle: 'italic',
         fontWeight: 600,
-        color: 'var(--gold)',
+        background: 'linear-gradient(135deg, var(--accent), var(--cyan))',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+        backgroundClip: 'text',
         textDecoration: 'none',
         letterSpacing: '-0.01em',
       }}>UT.</a>
@@ -52,7 +55,7 @@ export default function Navbar() {
               textDecoration: 'none',
               transition: 'color 0.2s',
             }}
-            onMouseEnter={e => e.target.style.color = 'var(--gold)'}
+            onMouseEnter={e => e.target.style.color = 'var(--accent)'}
             onMouseLeave={e => e.target.style.color = 'var(--ink3)'}
             >{l.label}</a>
           </li>

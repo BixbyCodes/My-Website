@@ -10,7 +10,7 @@ export default function F1() {
     <section className="section" id="f1" style={{ position: 'relative', overflow: 'hidden' }}>
       <div style={{
         position: 'absolute', inset: 0,
-        background: 'radial-gradient(ellipse 50% 60% at 85% 50%, rgba(224,85,85,0.04), transparent)',
+        background: 'radial-gradient(ellipse 50% 60% at 85% 50%, rgba(244,114,182,0.05), transparent)',
         pointerEvents: 'none',
       }} />
       <div className="container">
